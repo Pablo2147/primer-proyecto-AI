@@ -19,7 +19,7 @@ RESPONSE_SCHEMA = {
     "required": ["sentimiento", "confianza"],
 }
 
-PREGUNTA = "El servicio llegó tarde pero el producto está perfecto."
+PREGUNTA = "El servicio llegó tarde pero el producto está perfecto!."
 
 
 def main():
