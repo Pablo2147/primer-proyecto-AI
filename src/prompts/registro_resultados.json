@@ -1,0 +1,18 @@
+{
+  "clasificar_categoria_ticket": {
+    "exitos": 2,
+    "intentos": 3
+  },
+  "extraer_datos_contacto": {
+    "exitos": 3,
+    "intentos": 3
+  },
+  "resumir_texto": {
+    "exitos": 2,
+    "intentos": 3
+  },
+  "detectar_idioma": {
+    "exitos": 3,
+    "intentos": 3
+  }
+}
