@@ -1,11 +1,13 @@
-from consumir_gemini import (
-    armar_peticion,
-    enviar_peticion,
-    extraer_texto,
-    parsear_respuesta_json,
-)
+# from consumir_gemini import (
+#     armar_peticion,
+#     enviar_peticion,
+#     extraer_texto,
+#     parsear_respuesta_json,
+# )
 
-from cliente import consultar_modelo
+import cliente
+
+# from cliente import consultar_modelo
 
 SYSTEM_INSTRUCTION = (
     "Responde únicamente con un JSON con las claves 'sentimiento' "
@@ -36,13 +38,10 @@ def main():
 
     # print("Pregunta:", PREGUNTA)
     # print("Respuesta:", datos)
-    try:
-        respuesta = consultar_modelo("¿Cuál es la capital de Chile?")
-        print(respuesta)
-    except ValueError as error:
-        print(f"Error de configuración: {error}")
-    except RuntimeError as error:
-        print(f"{error}")
+
+    respuesta = cliente.consultar_modelo("¿Cuál es la capital de Chile?")
+    print(respuesta)
+    print(f"Costo acumulado de la sesión: ${cliente.costo_total_sesion:.5f}")
 
 
 if __name__ == "__main__":
