@@ -5,8 +5,8 @@
 #     parsear_respuesta_json,
 # )
 
-import cliente
-from pipeline_texto import procesar_texto
+import cliente, json
+from pipeline_texto import calcular_metricas
 
 # from cliente import consultar_modelo
 
@@ -44,31 +44,67 @@ def main():
     # print(respuesta)
     # print(f"Costo acumulado de la sesión: ${cliente.costo_total_sesion:.5f}")
 
-    consulta = "¿Qué es Python?"
+    # consulta = "¿Qué es Python?"
 
-    referencia = "Python es un lenguaje de programación interpretado."
+    # referencia = "Python es un lenguaje de programación interpretado."
 
-    respuesta = cliente.consultar_modelo(consulta)
+    # respuesta = cliente.consultar_modelo(consulta)
 
-    crudo_ref = referencia.split()
+    # crudo_ref = referencia.split()
 
-    crudo_resp = respuesta.split()
+    # crudo_resp = respuesta.split()
 
-    comunes_crudo = set(crudo_ref) & set(crudo_resp)
+    # comunes_crudo = set(crudo_ref) & set(crudo_resp)
 
-    pct_crudo = len(comunes_crudo) / len(set(crudo_ref))
+    # pct_crudo = len(comunes_crudo) / len(set(crudo_ref))
 
-    tokens_ref = procesar_texto(referencia)
+    # tokens_ref = procesar_texto(referencia)
 
-    tokens_resp = procesar_texto(respuesta)
+    # tokens_resp = procesar_texto(respuesta)
 
-    comunes = set(tokens_ref) & set(tokens_resp)
+    # comunes = set(tokens_ref) & set(tokens_resp)
 
-    pct_proc = len(comunes) / len(set(tokens_ref))
+    # pct_proc = len(comunes) / len(set(tokens_ref))
 
-    print(f"[Caso 1] Coincidencia texto crudo: {pct_crudo:.1%}")
+    # print(f"[Caso 1] Coincidencia texto crudo: {pct_crudo:.1%}")
 
-    print(f"[Caso 1] Coincidencia texto procesado: {pct_proc:.1%}")
+    # print(f"[Caso 1] Coincidencia texto procesado: {pct_proc:.1%}")
+    casos = [
+        (
+            "¿Qué es Python?",
+            "Python es un lenguaje de programación interpretado.",
+        ),
+        ("¿Cuándo se creó Python?", "Python fue creado en 1991."),
+        (
+            "¿Qué es una lista en Python?",
+            "Una lista es una colección ordenada y modificable.",
+        ),
+    ]
+
+    resultados = []
+    for consulta, referencia in casos:
+
+        respuesta = cliente.consultar_modelo(consulta)
+
+        metricas = calcular_metricas(referencia, respuesta)
+
+        resultados.append(
+            {
+                "consulta": consulta,
+                "respuesta": respuesta,
+                **metricas,
+            }
+        )
+
+    with open("resultados_metricas.json", "w", encoding="utf-8") as archivo:
+
+        json.dump(resultados, archivo, indent=2, ensure_ascii=False)
+
+    peores_casos = sorted(resultados, key=lambda r: r["f1"])
+
+    for caso in peores_casos[:3]:
+
+        print(caso["consulta"], caso["f1"])
 
 
 if __name__ == "__main__":

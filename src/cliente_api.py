@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-MODELO = "gemini-3.1-flash-lite"
+MODELO = "gemini-3.5-flash-lite"
 # El documento de la lección usa "gemini-2.0-flash", pero ese modelo ya fue
 # dado de baja por Google (aparece como "Shut down" en su documentación).
 # Usamos "gemini-3.8-flash", el modelo Flash vigente más reciente.
