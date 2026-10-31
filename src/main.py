@@ -70,15 +70,71 @@ def main():
 
     # print(f"[Caso 1] Coincidencia texto procesado: {pct_proc:.1%}")
     casos = [
-        (
-            "¿Qué es Python?",
-            "Python es un lenguaje de programación interpretado.",
-        ),
-        ("¿Cuándo se creó Python?", "Python fue creado en 1991."),
-        (
+        ["¿Qué es Python?", "Python es un lenguaje de programación interpretado."],
+        ["¿Cuándo se creó Python?", "Python fue creado en 1991."],
+        [
             "¿Qué es una lista en Python?",
             "Una lista es una colección ordenada y modificable.",
-        ),
+        ],
+        ["¿Cuál es la capital de Chile?", "La capital de Chile es Santiago."],
+        [
+            "¿Cuál es el río más largo del mundo?",
+            "El río más largo del mundo es el Nilo.",
+        ],
+        ["¿Cuál es el océano más grande?", "El océano más grande es el Pacífico."],
+        ["¿Cuántos continentes hay?", "Hay siete continentes."],
+        [
+            "¿En qué año llegó el hombre a la Luna?",
+            "El hombre llegó a la Luna en 1969.",
+        ],
+        [
+            "¿Quién fue el primer presidente de Estados Unidos?",
+            "George Washington fue el primer presidente de Estados Unidos.",
+        ],
+        [
+            "¿En qué año comenzó la Revolución Francesa?",
+            "La Revolución Francesa comenzó en 1789.",
+        ],
+        [
+            "¿Quién descubrió América en 1492?",
+            "Cristóbal Colón llegó a América en 1492.",
+        ],
+        [
+            "¿Cuántos jugadores tiene un equipo de fútbol en cancha?",
+            "Un equipo de fútbol tiene once jugadores en cancha.",
+        ],
+        [
+            "¿Qué país ganó el Mundial de fútbol de 2022?",
+            "Argentina ganó el Mundial de fútbol de 2022.",
+        ],
+        [
+            "¿Cada cuántos años se celebran los Juegos Olímpicos?",
+            "Los Juegos Olímpicos se celebran cada cuatro años.",
+        ],
+        [
+            "¿Cuántos puntos vale un triple en baloncesto?",
+            "Un triple en baloncesto vale tres puntos.",
+        ],
+        [
+            "¿Cuál es el planeta más cercano al Sol?",
+            "Mercurio es el planeta más cercano al Sol.",
+        ],
+        [
+            "¿Cuál es la fórmula química del agua?",
+            "La fórmula química del agua es H2O.",
+        ],
+        [
+            "¿Qué gas necesitan las plantas para la fotosíntesis?",
+            "Las plantas necesitan dióxido de carbono para la fotosíntesis.",
+        ],
+        [
+            "¿Quién escribió Don Quijote de la Mancha?",
+            "Miguel de Cervantes escribió Don Quijote de la Mancha.",
+        ],
+        [
+            "¿Qué es una función en programación?",
+            "Una función es un bloque de código reutilizable que realiza una tarea.",
+        ],
     ]
 
     resultados = []

@@ -19,5 +19,124 @@
     "precision": 0.025,
     "cobertura": 0.875,
     "f1": 0.04861111111111111
+  },
+  {
+    "consulta": "¿Cuál es la capital de Chile?",
+    "respuesta": "La capital de Chile es **Santiago** (también conocida como Santiago de Chile).",
+    "precision": 0.5,
+    "cobertura": 1.0,
+    "f1": 0.6666666666666666
+  },
+  {
+    "consulta": "¿Cuál es el río más largo del mundo?",
+    "respuesta": "El río más largo del mundo es el **río Nilo**, aunque durante muchos años ha existido un debate científico con el **río Amazonas**.\n\nAquí te explico los detalles:\n\n1. **El Nilo:** Tradicionalmente y de forma oficial (reconocido por Guinness y la Encyclopædia Britannica), se le atribuye el primer puesto con una longitud de aproximadamente **6.650 kilómetros**. Fluye hacia el norte a través de África noreste y desemboca en el mar Mediterráneo.\n2. **El Amazonas:** Durante mucho tiempo se consideró el segundo más largo (con unos 6.400 kilómetros), pero es indiscutiblemente el **más caudaloso** del mundo (lleva más agua que los siguientes siete ríos más grandes juntos). Sin embargo, recientes expediciones científicas, especialmente de origen brasileño, han recalculado su nacimiento midiendo afluentes más lejanos, lo que situaría su longitud entre los **6.992 y 7.100 kilómetros**, superando al Nilo.\n\n**En resumen:** \n* Oficialmente por consenso histórico y geográfico: **El Nilo**.\n* Según estudios geodésicos recientes más ambiciosos: **El Amazonas**.",
+    "precision": 0.05806451612903226,
+    "cobertura": 1.0,
+    "f1": 0.10975609756097561
+  },
+  {
+    "consulta": "¿Cuál es el océano más grande?",
+    "respuesta": "El océano más grande del mundo es el **océano Pacífico**. \n\nEs tan inmenso que su superficie (aproximadamente 165 millones de kilómetros cuadrados) es mayor que la de todos los continentes juntos.",
+    "precision": 0.22580645161290322,
+    "cobertura": 1.0,
+    "f1": 0.3684210526315789
+  },
+  {
+    "consulta": "¿Cuántos continentes hay?",
+    "respuesta": "La respuesta más común y aceptada en la mayor parte del mundo hispanohablante es que **hay 6 continentes**. \n\nEstos son:\n1. **América** (a veces dividido en América del Norte y América del Sur)\n2. **Europa**\n3. **Asia**\n4. **África**\n5. **Oceanía**\n6. **Antártida**\n\nSin embargo, el concepto de \"continente\" puede variar según el modelo educativo y la región del mundo:\n\n* **Modelo de 4 continentes:** Algunos geógrafos agrupan a Europa, Asia y África en un solo supercontinente llamado **Eurafrasia**, quedando: América, Eurafrasia, Oceanía y Antártida.\n* **Modelo de 5 continentes (el de los anillos olímpicos):** Considera solo los continentes habitados: **África, América, Asia, Europa y Oceanía** (dejando fuera la Antártida).\n* **Modelo de 7 continentes (muy usado en el mundo anglosajón):** Divide a América en dos y a Europa y Asia en dos, quedando: **América del Norte, América del Sur, Europa, Asia, África, Oceanía y Antártida**.\n\nEn resumen, **en los colegios de habla hispana se enseña tradicionalmente que son 6**.",
+    "precision": 0.012738853503184714,
+    "cobertura": 0.6666666666666666,
+    "f1": 0.025
+  },
+  {
+    "consulta": "¿En qué año llegó el hombre a la Luna?",
+    "respuesta": "El hombre llegó a la Luna en **1969**. \n\nMás exactamente, ocurrió el **20 de julio de 1969**, cuando el astronauta estadounidense Neil Armstrong, comandante de la misión Apolo 11, pisó la superficie lunar.",
+    "precision": 0.24242424242424243,
+    "cobertura": 1.0,
+    "f1": 0.3902439024390244
+  },
+  {
+    "consulta": "¿Quién fue el primer presidente de Estados Unidos?",
+    "respuesta": "El primer presidente de Estados Unidos fue **George Washington**. Ocupó el cargo desde 1789 hasta 1797.",
+    "precision": 0.5625,
+    "cobertura": 1.0,
+    "f1": 0.72
+  },
+  {
+    "consulta": "¿En qué año comenzó la Revolución Francesa?",
+    "respuesta": "La Revolución Francesa comenzó en **1789**. \n\nEl hito que marcó su inicio oficial fue la **Toma de la Bastilla**, ocurrida el **14 de julio** de ese año.",
+    "precision": 0.2222222222222222,
+    "cobertura": 1.0,
+    "f1": 0.3636363636363636
+  },
+  {
+    "consulta": "¿Quién descubrió América en 1492?",
+    "respuesta": "Oficialmente, en la historia occidental, se considera que América fue descubierta en 1492 por **Cristóbal Colón**, un navegante y cartógrafo genovés al servicio de los Reyes Católicos de España. \n\nColón llegó al continente el **12 de octubre de 1492** creyendo que había llegado a las Indias (Asia) tras cruzar el océano Atlántico, sin saber que se había encontrado con un continente desconocido para los europeos.\n\nSin embargo, hay matices importantes a esta afirmación:\n1. **Los pueblos indígenas:** Los nativos americanos ya habitaban el continente desde hacía miles de años (se estima que llegaron al menos 15,000 años antes).\n2. **Los vikingos:** Cerca del año 1000 d.C., el explorador vikingo **Leif Eriksson** llegó a Norteamérica (a la actual isla de Terranova, en Canadá), aunque este asentamiento no prosperó ni tuvo el impacto histórico y comercial del viaje de Colón.",
+    "precision": 0.050724637681159424,
+    "cobertura": 1.0,
+    "f1": 0.09655172413793105
+  },
+  {
+    "consulta": "¿Cuántos jugadores tiene un equipo de fútbol en cancha?",
+    "respuesta": "Un equipo de fútbol tiene **11 jugadores** en la cancha durante un partido (10 jugadores de campo y 1 portero).",
+    "precision": 0.4,
+    "cobertura": 0.8888888888888888,
+    "f1": 0.5517241379310346
+  },
+  {
+    "consulta": "¿Qué país ganó el Mundial de fútbol de 2022?",
+    "respuesta": "El Mundial de Fútbol de 2022 fue ganado por **Argentina**.",
+    "precision": 0.7,
+    "cobertura": 0.875,
+    "f1": 0.7777777777777777
+  },
+  {
+    "consulta": "¿Cada cuántos años se celebran los Juegos Olímpicos?",
+    "respuesta": "Los Juegos Olímpicos se celebran cada **4 años**. \n\nEste período de cuatro años se conoce tradicionalmente como una **Olimpiada**. \n\nSin embargo, hay que hacer una distinción:\n* **Los Juegos Olímpicos de Verano y los de Invierno** se alternan también cada cuatro años, pero están desfasados por un intervalo de dos años. (Por ejemplo, hay Juegos de Verano en 2024, de Invierno en 2026, de Verano en 2028, etc.). \n* A lo largo de la historia solo se han interrumpido debido a guerras mundiales (1916, 1940 y 1944) y, más recientemente, los Juegos de Tokio 2020 tuvieron que posponerse un año debido a la pandemia de COVID-19, celebrándose en 2021, pero manteniendo su ciclo de cuatro años en adelante.",
+    "precision": 0.06896551724137931,
+    "cobertura": 1.0,
+    "f1": 0.12903225806451613
+  },
+  {
+    "consulta": "¿Cuántos puntos vale un triple en baloncesto?",
+    "respuesta": "Un triple en baloncesto vale **3 puntos**. \n\nSe consigue encestando el balón desde más allá de la línea de tres puntos, que es un arco semicircular dibujado en la cancha a una distancia que suele variar entre los 6.75 metros (en competiciones FIBA y europeas) y los 7.24 metros (en la NBA) desde el aro.",
+    "precision": 0.12727272727272726,
+    "cobertura": 1.0,
+    "f1": 0.22580645161290322
+  },
+  {
+    "consulta": "¿Cuál es el planeta más cercano al Sol?",
+    "respuesta": "El planeta más cercano al Sol es **Mercurio**.",
+    "precision": 1.0,
+    "cobertura": 1.0,
+    "f1": 1.0
+  },
+  {
+    "consulta": "¿Cuál es la fórmula química del agua?",
+    "respuesta": "La fórmula química del agua es **H₂O**. \n\nEsto significa que cada molécula de agua está compuesta por dos átomos de hidrógeno (H) y un átomo de oxígeno (O).",
+    "precision": 0.21428571428571427,
+    "cobertura": 0.8571428571428571,
+    "f1": 0.34285714285714286
+  },
+  {
+    "consulta": "¿Qué gas necesitan las plantas para la fotosíntesis?",
+    "respuesta": "El gas que necesitan las plantas para la fotosíntesis es el **dióxido de carbono** ($\\text{CO}_2$). \n\nLo absorben del aire a través de unos pequeños poros en sus hojas llamados **estomas**.",
+    "precision": 0.3,
+    "cobertura": 1.0,
+    "f1": 0.4615384615384615
+  },
+  {
+    "consulta": "¿Quién escribió Don Quijote de la Mancha?",
+    "respuesta": "**Don Quijote de la Mancha** fue escrito por **Miguel de Cervantes Saavedra**. \n\nLa primera parte de esta famosa obra se publicó en 1605 y la segunda parte en 1615.",
+    "precision": 0.27586206896551724,
+    "cobertura": 0.8888888888888888,
+    "f1": 0.42105263157894735
+  },
+  {
+    "consulta": "¿Qué es una función en programación?",
+    "respuesta": "En programación, una **función** es un bloque de código reutilizable que realiza una tarea específica. \n\nPara entenderlo de forma sencilla, imagina una función como una **máquina o una receta de cocina**:\n1. Le das unos ingredientes (**datos de entrada o argumentos**).\n2. La máquina hace algo con ellos (ejecuta el código interno).\n3. Te devuelve un resultado (**un valor de salida**).\n\n---\n\n### Partes principales de una función\nAunque depende del lenguaje de programación, una función suele tener los siguientes elementos:\n\n1. **Nombre:** Cómo se llama la función para poder invocarla o llamarla (por ejemplo, `calcular_precio`).\n2. **Parámetros (o argumentos):** Son los valores que la función necesita para trabajar (opcionales).\n3. **Cuerpo de la función:** El conjunto de instrucciones que realizan la tarea.\n4. **Valor de retorno:** El resultado final que la función devuelve al programa principal (usando la palabra clave `return`).\n\n---\n\n### Un ejemplo práctico (en Python)\n\nImagina que quieres una función que sume dos números:\n\n```python\n# 1. Definición de la función\ndef sumar(a, b):\n    resultado = a + b\n    return resultado  # Devuelve la suma\n\n# 2. Uso (llamada) de la función\nmi_suma = sumar(5, 3) \nprint(mi_suma)  # Imprimirá 8\n```\n\n---\n\n### ¿Para qué sirven? (Ventajas)\n\n* **Reutilización de código:** Si necesitas hacer la misma tarea 10 veces en diferentes partes de tu programa, escribes la función una sola vez y la llamas las veces que necesites, en lugar de repetir código.\n* **Organización (Modularidad):** Permiten dividir un programa grande y complejo en partes más pequeñas y fáciles de manejar.\n* **Mantenimiento:** Si hay un error, solo tienes que corregirlo en el interior de la función, en lugar de buscar por todo el programa.\n* **Legibilidad:** Hacen que el código sea más fácil de leer y entender para otros programadores (o para ti mismo en el futuro).",
+    "precision": 0.04225352112676056,
+    "cobertura": 1.0,
+    "f1": 0.08108108108108109
   }
 ]
