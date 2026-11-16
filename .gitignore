@@ -22,3 +22,4 @@ Thumbs.db
 
 # Directorios de almacenamiento de vectores
 vectorstore/
+vectorstore_ejemplo/
